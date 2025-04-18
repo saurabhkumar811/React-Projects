@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Animated Gradient Background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #533483); 
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+/* Increased size for password generator box */
+.wider-box {
+  width: 36rem;  /* Further increased width */
+  padding: 3rem; /* More padding */
+}
+
+/* Sparkle effect around password generator box */
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 140, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+  }
+}
+
+.sparkle-effect:hover {
+  animation: sparkle 1s infinite alternate;
+}
+
+/* Glow effect for buttons */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 140, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+  }
+}
+
+.glow-effect:hover {
+  animation: glow 1s infinite alternate;
+}
